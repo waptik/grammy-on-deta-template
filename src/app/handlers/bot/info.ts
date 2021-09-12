@@ -1,28 +1,15 @@
 import { Composer } from "grammy";
-import { User } from "grammy/out/platform";
+
+import { getFullName } from "app/helpers/name";
 
 const composer = new Composer();
-
-function getFullName(from: User) {
-  return from.last_name
-    ? `${from.first_name} ${from.last_name}`
-    : from.first_name;
-}
 
 const filterCommands = composer.filter((ctx) =>
   ctx.chat ? ctx.chat.type === "private" : false
 );
 
-filterCommands.command("start", async (ctx) => {
-  // Ignore the message if it's older than 2 seconds
-  ctx.reply(`Hi ${getFullName(ctx.from!)} 👋`);
-});
-
 filterCommands.command("status", async (ctx) => {
-  // Ignore the message if it's older than 2 seconds
-  if (Date.now() / 1000 - ctx.msg.date < 2) {
-    ctx.reply("The bot is up 👍.");
-  }
+  ctx.reply("The bot is up 👍.");
 });
 
 // about user

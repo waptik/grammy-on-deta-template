@@ -2,9 +2,14 @@ import { Bot } from "grammy";
 import { apiThrottler } from "@grammyjs/transformer-throttler";
 
 import botHandlers from "app/handlers/bot";
+import { getFullName } from "app/helpers/name";
 import env from "./env";
 
 const bot = new Bot(env.BOT_TOKEN);
+
+bot.command("start", async (ctx) => {
+  ctx.reply(`Hi ${getFullName(ctx.from!)} 👋`);
+});
 
 bot.api
   .setMyCommands([
