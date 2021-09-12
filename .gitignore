@@ -18,5 +18,5 @@ yarn-error.log*
 *.lock
 
 # build files and directories
-app
+/app
 *.js
