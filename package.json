@@ -6,7 +6,7 @@
   "scripts": {
     "clean": "rm -rf app && rm -f index.js",
     "start": "node index.js",
-    "dev": "ts-node src/index.ts",
+    "dev": "ts-node -r tsconfig-paths/register src/index.ts",
     "prebuild": "npm run clean",
     "build": "tsc",
     "test": "tsc --noEmit",
@@ -50,6 +50,7 @@
     "eslint": "^7.32.0",
     "nodemon": "^2.0.12",
     "ts-node": "^10.2.1",
+    "tsconfig-paths": "^3.11.0",
     "typescript": "^4.4.2"
   }
 }
