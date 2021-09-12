@@ -4,7 +4,7 @@ This is a template to deploy a telegram bot using [grammY](https://grammy.dev) a
 
 ## How to use
 
-Fork this repo as a template, clone the forked repo locally and do your changes
+Click the `Use this template` button to have your copy, clone the newly generated repo locally and do your changes as you see fit.
 
 ## Configuration
 
@@ -60,9 +60,13 @@ Your bot should be up and running on [http://localhost:8080](http://localhost:80
 
 ### Create a Deta.sh micros
 
-As of now, you have yet to link your local to a micros on Deta cloud. You can do so
+As of now, you have yet to link your local to a micros on Deta cloud:
 
 ```bash
+npm run build
+deta new -n
+#or
+yarn build
 deta new -n
 ```
 
@@ -82,3 +86,5 @@ This will do 3 things for you:
 2. Push your environment variables to Deta
 3. Deploy your app on Deta
 4. Clean your root folder of any build outputs again
+
+That's all!!!
