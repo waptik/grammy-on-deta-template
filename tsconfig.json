@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "module": "CommonJS",
+    "strict": true,
+    "target": "ES2021",
+    "baseUrl": ".",
+    "esModuleInterop": true,
+    "outDir": "./",
+    "skipLibCheck": true,
+    "paths": {
+      "app/*": ["src/app/*"],
+      "handlers/*": ["src/app/handlers/*"],
+      "server/*": ["src/app/server/*"]
+    }
+  },
+  "include": ["src/"],
+  "exclude": ["node_modules"]
+}
