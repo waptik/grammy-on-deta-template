@@ -37,7 +37,6 @@
   "dependencies": {
     "@grammyjs/runner": "^1.0.2",
     "@grammyjs/transformer-throttler": "^1.0.1",
-    "deta": "^1.0.0",
     "dotenv": "^10.0.0",
     "envalid": "^7.2.1",
     "express": "^4.17.1",
