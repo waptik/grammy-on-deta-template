@@ -1,6 +1,6 @@
 import Express from "express";
 
-import expressHandlers from "handlers/server";
+import expressHandlers from "app/handlers/server";
 
 const express = Express();
 
