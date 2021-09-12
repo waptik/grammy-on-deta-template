@@ -1,8 +1,17 @@
+# dependencies
 node_modules
-.deta
-.env*
-build
-dist
-handlers
 
+# Deta
+.deta
+
+# local env files
+.env
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# build files and directories
+app
 *.js
