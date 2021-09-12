@@ -1,0 +1,15 @@
+# env files
+.env*
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# lock files
+*-lock*
+*.lock
+
+# source files and directories, config
+src
+tsconfig*
