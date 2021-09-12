@@ -14,14 +14,15 @@
     "deploy": "npm run build && npm run deploy:all && npm run clean",
     "deploy:env": "deta update -e .env",
     "deploy:app": "deta deploy",
-    "deploy:all": "npm run deploy:env && deploy:app"
+    "deploy:all": "npm run deploy:env && npm run deploy:app"
   },
   "keywords": [
     "deta.sh",
     "telegram",
     "telegram-bot",
     "grammy",
-    "grammyjs"
+    "grammyjs",
+    "deta"
   ],
   "author": "Stephane Mensah",
   "repository": {
