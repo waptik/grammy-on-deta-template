@@ -11,7 +11,10 @@
     "build": "tsc",
     "test": "tsc --noEmit",
     "lint": "eslint src/",
-    "deploy": "npm run build && deta deploy && npm run clean"
+    "deploy": "npm run build && npm run deploy && npm run clean",
+    "deploy:env": "deta update -e .env",
+    "deploy:app": "deta deploy",
+    "deploy:all": "npm run deploy:env && deploy:app"
   },
   "keywords": [
     "deta.sh",
