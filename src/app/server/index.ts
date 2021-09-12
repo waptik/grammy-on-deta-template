@@ -1,4 +1,3 @@
-import { run } from "@grammyjs/runner";
 import { webhookCallback } from "grammy";
 
 import app from "./express";
@@ -8,7 +7,7 @@ import env from "./env";
 function main() {
   if (!env.DETA_PATH) {
     bot.catch(console.error);
-    run(bot);
+    bot.start();
     console.log("Bot started");
     return;
   }
