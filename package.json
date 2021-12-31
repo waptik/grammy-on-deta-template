@@ -27,13 +27,13 @@
   "author": "Stephane Mensah",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/waptik/tdbnotificationbot.git"
+    "url": "git+https://github.com/waptik/grammy-on-deta-template.git"
   },
   "license": "AGPL-3.0",
   "bugs": {
-    "url": "https://github.com/waptik/tdbnotificationbot/issues"
+    "url": "https://github.com/waptik/grammy-on-deta-template/issues"
   },
-  "homepage": "https://github.com/waptik/tdbnotificationbot#readme",
+  "homepage": "https://github.com/waptik/grammy-on-deta-template#readme",
   "dependencies": {
     "@grammyjs/transformer-throttler": "^1.0.1",
     "dotenv": "^10.0.0",
