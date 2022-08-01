@@ -1,10 +1,11 @@
 import Express from "express";
 
-import expressHandlers from "app/handlers/server";
+import routes from "./routes";
 
 const express = Express();
 
-express.use(expressHandlers);
 express.use(Express.json());
+
+express.use(routes);
 
 export default express;
