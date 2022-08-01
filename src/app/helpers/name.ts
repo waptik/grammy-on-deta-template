@@ -1,4 +1,4 @@
-import { User } from "grammy/out/platform";
+import { User } from "grammy/out/platform.node";
 
 export function getFullName(from: User) {
   return from.last_name

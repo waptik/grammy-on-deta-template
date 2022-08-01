@@ -1,6 +1,6 @@
 import { Composer } from "grammy";
 
-import { getFullName } from "app/helpers/name";
+import { getFullName } from "../../helpers/name";
 
 const composer = new Composer();
 

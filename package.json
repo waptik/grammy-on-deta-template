@@ -7,14 +7,14 @@
     "clean": "rm -rf app && rm -f index.js",
     "start": "node index.js",
     "dev": "ts-node -r tsconfig-paths/register src/index.ts",
-    "prebuild": "npm run clean",
+    "prebuild": "yarn clean",
     "build": "tsc",
     "test": "tsc --noEmit",
     "lint": "eslint src/",
-    "deploy": "npm run build && npm run deploy:all && npm run clean",
+    "deploy": "yarn build && yarn deploy:all && yarn clean",
     "deploy:env": "deta update -e .env",
     "deploy:app": "deta deploy",
-    "deploy:all": "npm run deploy:env && npm run deploy:app"
+    "deploy:all": "yarn deploy:env && yarn deploy:app"
   },
   "keywords": [
     "deta.sh",

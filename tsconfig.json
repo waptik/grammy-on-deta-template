@@ -3,16 +3,12 @@
     "module": "CommonJS",
     "strict": true,
     "target": "ES2021",
-    "baseUrl": ".",
     "esModuleInterop": true,
     "outDir": "./",
+    "rootDir": "src",
     "skipLibCheck": true,
-    "paths": {
-      "app/*": ["src/app/*"],
-      "handlers/*": ["src/app/handlers/*"],
-      "server/*": ["src/app/server/*"]
-    }
+    "forceConsistentCasingInFileNames": true
   },
-  "include": ["src/"],
+  "include": ["src/**/*", "**/*.ts"],
   "exclude": ["node_modules"]
 }
