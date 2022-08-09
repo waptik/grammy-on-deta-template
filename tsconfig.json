@@ -4,6 +4,8 @@
     "strict": true,
     "target": "ES2021",
     "esModuleInterop": true,
+        "moduleResolution": "node16"
+,
     "outDir": "./",
     "rootDir": "src",
     "skipLibCheck": true,
